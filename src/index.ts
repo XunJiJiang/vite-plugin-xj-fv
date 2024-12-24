@@ -1,7 +1,7 @@
 import * as sass from 'sass'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
-import { type Plugin, type ResolvedConfig } from 'vite'
+import { type PluginOption, type ResolvedConfig } from 'vite'
 
 type Options = {
   scss?: {
@@ -25,7 +25,7 @@ const updateGlobalScss = (option: Options | void) => {
   return globalScss
 }
 
-export default (option: Options | void): Plugin => {
+export default (option: Options | void): PluginOption => {
   let config: ResolvedConfig
 
   /** 用于在生产环境保存css, 文件指纹等信息 */

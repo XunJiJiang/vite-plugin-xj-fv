@@ -1,10 +1,11 @@
 {
   "name": "vite-plugin-xj-fv",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "build": "rollup --config ./rollup.config.js && rollup --config ./rollup.config.dts.js"
+    "build": "rollup --config ./rollup.config.js && rollup --config ./rollup.config.dts.js",
+    "release": "powershell ./publish.ps1"
   },
   "keywords": [
     "xj",
