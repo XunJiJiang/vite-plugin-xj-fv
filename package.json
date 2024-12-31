@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-xj-fv",
   "description": "vite plugin for xj-fv",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
